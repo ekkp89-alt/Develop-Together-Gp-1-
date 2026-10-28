@@ -1,0 +1,228 @@
+.home {
+    min-height: 100vh;
+    background-image: url("images/lantern.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 5, 30, 0.35);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation Bar */
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+  
+  /* Logo  */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #fde047;
+  }
+  
+  /* Navbar */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #fde047;
+  }
+  
+  .content {
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  .content p:first-child {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    color: #fde047;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+  
+  .content h1 span {
+    color: #fde047;
+    text-shadow: 0 0 25px rgba(234, 179, 8, 0.5);
+  }
+  
+  .content p:nth-of-type(2) {
+    font-size: 1.1rem;
+    color: #e2e8f0;
+    margin-bottom: 35px;
+    line-height: 1.6;
+  }
+  
+  /* (Buttons)  */
+  .content a.btn-primary, 
+  .content a.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .content .btn-primary {
+    background-color: #fde047;
+    color: #1a1a1a;
+  }
+  
+  .content .btn-outline {
+    border: 1px solid #fde047;
+    color: #ffffff;
+    background: transparent;
+  }
+  
+  .content .btn-outline:hover {
+    background-color: rgba(253, 224, 71, 0.1);
+  }
+
+/* Footer */
+
+.footer {
+    background-color: #100819;
+    color: white;
+    padding: 50px 8% 20px;
+    border-top: 1px solid #80652F;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+}
+
+.footer-brand {
+    max-width: 280px;
+}
+
+.footer-brand h2 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #D8CFE0;
+    line-height: 1.8;
+}
+
+.footer-links,
+.footer-message {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer h3 {
+    color: gold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #D8CFE0;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: gold;
+}
+
+.footer-message p {
+    color: #D8CFE0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #59422D;
+    padding-top: 20px;
+    text-align: center;
+    color: #C8B58B;
+    font-size: 12px;
+}
+
+/* Mobile Design */
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
