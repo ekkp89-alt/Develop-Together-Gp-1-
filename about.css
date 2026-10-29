@@ -1,0 +1,47 @@
+:root{
+    background-image: url(Thadingyut.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 1, 0.699);
+    border-radius: 60px;
+    box-shadow: 0 -55px 40px rgba(0, 0, 0, 0.8), 
+                0 55px 40px rgba(0, 0, 0, 0.8);
+    
+}
+
+h1{
+    font-size: 60px;
+    color: gold;
+    font-weight: bold;
+    margin: 60px auto 30px 80px;
+}
+
+.about{
+    font-size: 35px;
+    color:white;
+    margin:30px 80px 40px 80px;
+    line-height: 1.5;
+    text-align: justify;
+    letter-spacing: 1px;  
+    padding-bottom: px;
+}
+
+button>a{
+    text-decoration-line: none;
+    font-size: 20px;
+    color: black;
+}
+
+button{
+    width: 150px;
+    align-self: self-end;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
