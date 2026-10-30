@@ -67,6 +67,11 @@ header{
     text-decoration-line: none;
 }
 
+.nav a:hover,
+.nav a:active{
+    color: #fde047;
+}
+
 footer {
     border-top: 1px solid #59422D;
     padding: 20px;
@@ -74,4 +79,53 @@ footer {
     color: #C8B58B;
     font-size: 12px;
     background-color: #100819 ;
+}
+
+@media screen and (min-width:700px) and (max-width:1000px){
+    .about h1{
+        font-size: 35px;
+    }
+
+    .about p{
+        font-size: 25px;
+    }
+
+    .bg{
+        padding: 140px 80px 60px 80px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .bg{
+        padding: 150px 30px 30px 30px;
+    }
+
+    .about h1{
+        font-size: 22px;
+    }
+
+    .about p{
+        font-size: 17px;
+    }
+
+    header{
+        padding: 20px 40px;
+    }
+
+    .logo{
+        gap: 8px;
+    }
+
+    .nav ul{
+        gap: 20px;
+        padding-left: 30px;
+    }
+
+    footer{
+        padding: 8px;
+    }
+
+    .nav a{
+        font-size: 13px;
+    }
 }
