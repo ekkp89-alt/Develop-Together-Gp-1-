@@ -1,0 +1,168 @@
+.traditions {
+  width: 92%;
+  max-width: 1400px;
+  padding: 55px 40px;
+  background: #fff8e7;
+  margin: 20px auto;
+  box-sizing: border-box;
+  background:linear-gradient(2deg,#0d2770, #43027c,#1b0b29  )
+  /* background:linear-gradient(5deg,#08225B,#0A1F4C,#131E2B) */
+}
+.tradition-content {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tradition-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.tradition-text h2 {
+  font-size: 50px;
+  line-height: 1.3;
+  color: #f9d805;
+  margin-bottom: 20px;
+}
+
+.tradition-text p {
+  font-size: 30px;
+  line-height: 2;
+  color: #f0eceb;
+  text-align: justify;
+  margin-bottom: 25px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tradition-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: rgb(238, 10, 10);
+  color: #f9d805;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.tradition-btn:hover {
+  background: #295ae1;
+  transform: translateY(-3px);
+}
+
+.tradition-images {
+  flex: 1.1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.tradition-images img {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  border:10px solid #f9d805;
+  transition: transform 0.3s ease;
+  transform: translateY(-3px);
+  width:100%;
+  height:100%;
+  background-size: 100% 100vh;
+  margin: 10px;
+
+}
+
+.tradition-images img:hover {
+  transform: scale(1.03);
+}
+ @media(min-width: 32em) and (max-width:60em)
+ {
+    .traditons{
+        width: 95%;j
+        padding: 30px 20px;
+        margin: 20px auto;
+    }
+    .tradition-text{
+        width: 50%;
+    }
+    .tradition-content{
+        gap: 25px;
+    }
+    .tradition-text {
+        width: 50%;
+    }
+
+    .tradition-images {
+        width: 45%;
+        gap: 15px;
+    }
+
+    .tradition-text h2 {
+        font-size: 27px;
+    }
+
+    .tradition-text p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .tradition-images img {
+        height: 170px;
+    }
+
+ }
+ @media(max-width: 32em){
+      .traditions {
+        width: 94%;
+        padding: 25px 15px;
+        margin: 15px auto;
+        border-radius: 15px;
+    }
+
+    .tradition-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .tradition-text {
+        width: 100%;
+    }
+
+    .tradition-text h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .tradition-text p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .tradition-images {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .tradition-images img {
+        width: 100%;
+        height: auto;
+        max-height: 230px;
+        object-fit: contain;
+    }
+
+    .tradition-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+ }
