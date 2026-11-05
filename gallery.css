@@ -29,9 +29,11 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .gallery img:hover{
-  transform: rotate(360deg);
-  transition-duration: 5s;
+  /* transform: rotate(360deg);
+  transition-duration: 5s; */
   box-shadow: 10px 10px 10px #ebe306;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
 .gallery div{
   width: 25%;

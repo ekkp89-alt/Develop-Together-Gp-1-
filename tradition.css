@@ -1,3 +1,36 @@
+/* .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    z-index: 1000;
+    height:95px;
+    border-bottom:1px solid #5d4624;
+    flex-direction: row;
+  }
+  /* Logo  */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #fde047;
+    flex-shrink: 0;
+  }
+  .logo-icon{
+    font-size:42px;
+    color:gold;
+  }
+  .logo h2{
+    color:#ffd56a;
+    font-size:30px;
+    letter-spacing:2px;
+  } */
 .traditions {
   width: 92%;
   max-width: 1400px;
@@ -165,4 +198,3 @@
         font-size: 14px;
     }
 }
- }
