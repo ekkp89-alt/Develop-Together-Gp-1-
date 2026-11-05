@@ -1,0 +1,267 @@
+body{
+    background-image: url(images/wish.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header{
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:  rgba(20, 5, 30, 0.6);
+    border-bottom: gold solid 2px;
+    border-radius: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fde047;
+    gap: 12px;
+    text-transform: uppercase;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.nav a{
+    color: white;
+    text-decoration-line: none;
+}
+
+.nav a:hover,
+.nav a:active{
+    color: #fde047;
+}
+
+.main{
+    background-color:rgba(20, 5, 30, 0.6);
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 50px;
+    border-radius: 30px 0px 0px 30px;
+    border: #fde047 solid 1px;
+    border-right:none ;
+    box-shadow: 80px 0px 20px rgba(20, 5, 30,0.6);
+}
+
+h1{
+    color: #fde047;
+    font-weight: bold;
+    margin:0px;
+    margin-right: 20px;
+    padding: 0px auto 10px 8px;
+    font-size: 40px;
+    border-radius: 5px;
+    border-bottom:#fde047 solid 1px ;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+
+span{
+    color: #fde047;
+}
+
+.main div{
+    padding: 5px ;
+}
+
+input{
+    margin-right: 20px;
+    accent-color: #ffd700;
+}
+
+.wish{
+    display: inline;
+}
+
+button{
+    margin: 10px auto;
+    padding: 10px 30px;
+    background-color: #fde047;
+    color: rgb(20, 5, 30);
+    font-size: 15px;
+    border-radius: 80px;
+}
+
+button:hover{
+    background-color: rgb(20, 5, 30);
+    color: #fde047;
+}
+
+@media screen and (min-width:1010px) and (max-width:1110px) {
+    header{
+        padding: 0px 40px;
+        border-radius: 25px;
+    }
+    
+    .logo{
+        gap: 10px;
+    }
+
+    .nav ul{
+        gap: 30px;
+    }
+
+    .main{
+        margin-top: 18px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        padding-left:30px ;
+    }
+
+    h1{
+        margin-left: 17px;
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    input{
+        margin-right: 17px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1010px) {
+    header{
+        padding: 0px 30px;
+        border-radius: 23px;
+    }
+    
+    .logo{
+        gap: 19px;
+        font-size: 15px;
+    }
+
+    .nav ul{
+        gap: 27px;
+        font-size: 14px;
+    }
+
+    .main{
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-bottom: 17px;
+        padding-left:22px ;
+        width: 60%;
+    }
+
+    h1{
+        margin-left: 14px;
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    input{
+        margin-right: 14px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    header{
+        padding: 0px 20px;
+        border-radius: 15px;
+    }
+    
+    .logo{
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .nav ul{
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .main{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        padding-left:10px ;
+        width: 70%;
+    }
+
+    h1{
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    input{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header{
+        padding: 0px 10px;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+    .logo h2{
+        display: inline;
+    }
+
+    .logo p{
+        display: inline;
+        margin-left: 2px;
+    }
+    
+    .logo{
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .nav ul{
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .main{
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+        padding-left:10px ;
+        width: 90%;
+    }
+
+    h1{
+        margin-left: 10px;
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    input{
+        margin-right: 10px;
+    }
+     
+    button{
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
