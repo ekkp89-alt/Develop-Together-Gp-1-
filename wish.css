@@ -92,15 +92,19 @@ button{
     margin: 10px auto;
     padding: 10px 30px;
     background-color: #fde047;
-    color: rgb(20, 5, 30);
-    font-size: 15px;
     border-radius: 80px;
 }
 
-button:hover{
-    background-color: rgb(20, 5, 30);
-    color: #fde047;
+button a{
+    color: rgb(20, 5, 30);
+    font-size: 15px;
+    text-decoration-line: none ;
 }
+
+button:hover{
+    background-color: gray;
+}
+
 
 @media screen and (min-width:1010px) and (max-width:1110px) {
     header{
@@ -262,6 +266,9 @@ button:hover{
      
     button{
         padding: 10px 20px;
+    }
+
+    button a{
         font-size: 13px;
     }
 }
